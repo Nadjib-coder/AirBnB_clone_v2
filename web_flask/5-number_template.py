@@ -54,7 +54,7 @@ def python_n(n):
         return f"{n} is a number"
 
 
-@app.route('number_template/<int:n>', strict_slashes=False)
+@app.route('/number_template/<int:n>', strict_slashes=False)
 def template(n):
     """
     A function that display a HTML page only if n is an
