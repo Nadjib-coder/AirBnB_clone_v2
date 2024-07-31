@@ -4,12 +4,11 @@ a script that starts a Flask web application
 """
 from flask import Flask
 
-
 app = Flask(__name__)
 
 
 @app.route('/', strict_slashes=False)
-def hello():
+def hello_hbnb():
     """
     a function that display Hello HBNB!
     """
@@ -24,14 +23,15 @@ def hbnb():
     return "HBNB"
 
 
-@app.route('/c/<text>', strict_slashes=False)
+@app.route('/c/<text>')
 def dipslay_text(text):
     """
-    Display the value of the variable 'txt' woth underscores replaced
+    Display "C" followed by the value of the
+    variable 'txt' woth underscores replaced
     by spaces
     """
     text = text.replace('_', ' ')
-    return f"C{text}"
+    return f"C {text}"
 
 
 if __name__ == '__main__':
