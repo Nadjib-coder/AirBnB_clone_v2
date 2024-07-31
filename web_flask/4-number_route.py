@@ -51,7 +51,7 @@ def python_n(n):
     n is an integer
     """
     if isinstance(n, int):
-        return f'{n} is a number'
+        return f"{n} is a number"
 
 
 if __name__ == '__main__':
