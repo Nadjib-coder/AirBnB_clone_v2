@@ -30,7 +30,8 @@ def dipslay_text(text):
     Display the value of the variable 'txt' woth underscores replaced
     by spaces
     """
-    return f"{text.replace('_', ' ')}"
+    text = text.replace('_', ' ')
+    return f"C{text}"
 
 
 if __name__ == '__main__':
